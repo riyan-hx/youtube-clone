@@ -34,6 +34,9 @@ header {
 
 #search__input {
 	font-size: 103%;
+	border-style: solid;
+	stroke-width: 1px;
+	border-radius: 20px;
 	width: 100%;
 	position: relative;
 	top: 12px;
@@ -42,8 +45,9 @@ header {
 
 .search__icon {
 	float: right;
+	border-radius: 40px;
 	position: relative;
-	top: -17px;
+	top: -19px;
 	height: 28px;
 	width: 40px;
 	left: 10px;
@@ -92,6 +96,7 @@ header {
 .main-wrapper {
 	display: grid;
 	margin-top: 1.5em;
+	border-radius: 30px;
 	grid-template-columns: 1fr minmax(200px, 90em) 1fr;
 	margin-top: 5em;
 }
@@ -99,6 +104,7 @@ header {
 main {
 	margin: 0 1.8em 0 1.8em;
 	display: grid;
+	border-radius: 30px;
 	grid-gap: 1.5em;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 0.2fr 1fr;
@@ -112,10 +118,24 @@ section {
 	grid-template-rows: auto 1fr;
 }
 
+.show_more_button {
+	border: none;
+	background-color: white;
+	opacity: 90%;
+}
+.show_more_button:hover {
+	opacity: 60%;
+	cursor: pointer;
+	
+}
+
+
+
 .section__comments {
 	width: 26.4%;
 	position: relative;
 	top: 1em;
+	border: none;
 }
 
 .section__sort-container {
@@ -144,13 +164,19 @@ section {
 .section__profile img {
 	width: 3.3em;
 }
+.comment:focus {
+	border: rgb(255, 0, 43);
+
+}
 
 .input__container {
 	position: relative;
 	left: 5em;
+	border: none;
 	bottom: 3em;
 	margin-right: 5em;
 }
+
 
 .input__container input {
 	width: 100%;
@@ -164,6 +190,7 @@ section {
 .comments a {
 	margin-left: 4.5em;
 	position: relative;
+	border: none;
 }
 
 .comments__name {
@@ -184,6 +211,7 @@ section {
 .comments__comment {
 	position: relative;
 	bottom: 2em;
+	border: none;
 	line-height: 1.3em;
 }
 
@@ -246,6 +274,7 @@ section {
 
 .main__subscriptions {
 	float: right;
+	border-radius: 60px;
 }
 
 .main__sub-description p {
@@ -279,6 +308,7 @@ section {
 
 .main__video-container iframe {
 	position: absolute;
+	border-radius: 20px;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -326,6 +356,7 @@ aside {
 	padding: 1em;
 	text-align: center;
 }
+
 
 .aside__more a {
 	text-decoration: none;
